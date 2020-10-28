@@ -8,9 +8,12 @@ var field = [];
 function setup()
 {
     createCanvas(500,500);
-    for (var i = 0; i < 400; i++)
+    for (var i = 0; i < 400;i++)
     {
-        field.push(new Tile(i % 20, Math.floor(i / 20), "BARRIER"));
+        // field.push(new Tile(i % 20, Math.floor(i / 20), "BARRIER"));
+        // i++;
+        field.push(new Tile(i % 20, Math.floor(i / 20), random(TYPES)));
+        // i++;
     }
 }
 
