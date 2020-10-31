@@ -1,4 +1,4 @@
-
+var SIZE = 25;
 var TYPES = ["BARRIER", "OPEN", "BISCUIT", "CHERRY"];
 
 var oneHalf = SIZE / 2;
@@ -46,3 +46,18 @@ Tile.prototype.draw = function()
 
     }
 };
+
+function parseTileType(t)
+{
+    switch(t) 
+    {
+        case "0":
+            return "BARRIER";
+        case "1":
+            return "OPEN";
+        case "2":
+            return "BISCUIT";
+        case "3":
+            return "CHERRY";
+    }
+}
